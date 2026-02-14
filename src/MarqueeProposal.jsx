@@ -22,7 +22,7 @@ const MarqueeProposal = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % sentences.length);
-    }, 9000); // Change sentence every 9 seconds
+    }, 1500); // Change sentence every 9 seconds
     return () => clearInterval(interval);
   }, [sentences.length]);
 
